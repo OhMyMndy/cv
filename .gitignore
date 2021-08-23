@@ -1,0 +1,7 @@
+content.txt
+content.html
+*.pdf
+.idea
+vendor
+.history
+newfile.html
