@@ -10,4 +10,6 @@ RUN apt-get update -qq \
 
 RUN curl -SsL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb > /tmp/wk.deb \
     && dpkg -i /tmp/wk.deb \
-    ; apt-get install -f -q -yy
+    ; apt-get update \
+    && apt-get install -f -qq -y \
+    && rm -rf /var/lib/apt/lists/*
