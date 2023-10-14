@@ -1,0 +1,202 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Mandy Schoep",
+    "label": "Software/Automation/Cloud Engineer",
+    "image": "https://avatars0.githubusercontent.com/u/2277717?v=4",
+    "website": "https://www.ohmymndy.com",
+    "summary": "Software engineer, musician, cat mom and tinkerer with a passion for automation, software development and Linux.\n\nI have over 10 years of experience in developing ecommerce solutions and enterprise software for financial institutions, and over 5 years of experience as a DevOps engineer and Linux server administrator.\n\nIn my spare time I like to work on my home automation setup, play guitar and drums, tinker with new technologies, learn new skills, work on open source projects and play a game from time to time",
+    "location": {
+      "countryCode": "BE",
+      "region": "Antwerp",
+      "city": "Retie"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "mandy-schoep",
+        "url": "https://www.linkedin.com/in/mandy-schoep/"
+      },
+      {
+        "network": "GitHub",
+        "username": "OhMyMndy",
+        "url": "https://www.github.com/OhMyMndy"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Rackspace Technology",
+      "position": "Professional Services Delivery Engineer",
+      "startDate": "2022-02-01",
+      "highlights": [
+        "Creating Kubernetes platform",
+        "Containerizing applications",
+        "Implementing cloud solutions with Terraform on Google Cloud"
+      ],
+      "url": "https://www.linkedin.com/company/rackspace-technology/",
+      "location": "Amsterdam, The Netherlands"
+    },
+    {
+      "name": "Simbuka",
+      "position": "Software Engineer / DevOps Engineer",
+      "startDate": "2017-02-01",
+      "endDate": "2022-01-01",
+      "highlights": [
+        "Software development of software used by financial institutions",
+        "Containerizing applications",
+        "Implementing CI/CD",
+        "Linux system administration"
+      ],
+      "url": "https://www.linkedin.com/company/simbuka/",
+      "location": "Best, The Netherlands"
+    },
+    {
+      "name": "XSARUS E-development & Consulting",
+      "position": "Software Developer",
+      "startDate": "2015-02-01",
+      "endDate": "2016-11-01",
+      "highlights": [
+        "Building and maintaining of E-Commerce solutions with PHP and MySQL",
+        "Developing WMS systems"
+      ],
+      "url": "https://www.linkedin.com/company/xsarus-e-development-&-consulting/",
+      "location": "Middelharnis, The Netherlands"
+    },
+    {
+      "name": "Bax-shop.nl",
+      "position": "Software Developer",
+      "startDate": "2014-05-01",
+      "endDate": "2015-02-01",
+      "highlights": [
+        "Developing in house RMA system with AngularJS and Magento"
+      ],
+      "url": "https://www.bax-shop.com",
+      "location": "Goes, The Netherlands"
+    },
+    {
+      "name": "Colijn IT",
+      "position": "Web Developer",
+      "startDate": "2013-07-01",
+      "endDate": "2014-04-01",
+      "highlights": [
+        "Developing custom Magento themes"
+      ],
+      "url": "https://www.linkedin.com/company/colijn-it/",
+      "location": "Goes, The Netherlands"
+    },
+    {
+      "name": "DataByte",
+      "position": "Intern Webdeveloper",
+      "startDate": "2012-01-01",
+      "endDate": "2012-06-01",
+      "highlights": [
+        "Developing an auction web application with Zend Framework (PHP)"
+      ],
+      "url": "https://www.linkedin.com/company/databyte/"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Avans Hogeschool Breda, The Netherlands",
+      "area": "Communication and Multimedia design",
+      "studyType": "Bachelor’s Degree",
+      "startDate": "2009-09-01",
+      "endDate": "2013-08-01",
+      "courses": []
+    },
+    {
+      "institution": "Roncalli Scholengemeenschap, Bergen op Zoom, The Netherlands",
+      "area": "Economy & Society",
+      "studyType": "High School",
+      "startDate": "2003-08-01",
+      "endDate": "2009-09-01",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "HashiCorp Certified: Terraform Associate (003)",
+      "issuer": "HashiCorp",
+      "startDate": "2023-06-02",
+      "url": "https://www.credly.com/badges/7325361a-255b-4c50-9172-f06c81835650/linked_in_profile"
+    },
+    {
+      "name": "Rackspace Presenter",
+      "issuer": "HashiCorp",
+      "startDate": "2023-07-31",
+      "url": "https://www.credly.com/badges/e626227d-8c12-4ab2-b9f7-c3f36de1d3cb"
+    },
+    {
+      "name": "Fanatical Learner",
+      "issuer": "Rackspace Technology",
+      "startDate": "2022-07-01",
+      "url": "https://www.credly.com/badges/1751e6e4-0e9d-401b-a6c5-90d6d59d0e58"
+    },
+    {
+      "name": "Cloud Digital Leader",
+      "issuer": "Google Cloud",
+      "endDate": "2025-04-01",
+      "startDate": "2022-04-01",
+      "url": "https://www.credential.net/b733790e-4791-4fa5-a1fc-5690dd46bb7c"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Backend development",
+      "level": "Senior",
+      "keywords": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Redis",
+        "Python",
+        "Flask",
+        "Django"
+      ]
+    },
+    {
+      "name": "DevOps / Automation",
+      "level": "Senior",
+      "keywords": [
+        "Terraform",
+        "Docker",
+        "Podman",
+        "GitHub Actions",
+        "CircleCI",
+        "Linux",
+        "Ubuntu"
+      ]
+    },
+    {
+      "name": "DevOps / Automation",
+      "level": "Medior",
+      "keywords": [
+        "Google Cloud",
+        "Kubernetes",
+        "CDK8S"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native Speaker",
+      "language": "Dutch"
+    },
+    {
+      "fluency": "C1",
+      "language": "English"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "theme": "full"
+  }
+}

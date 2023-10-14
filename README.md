@@ -2,8 +2,4 @@
 
 ## Create cv
 
-`make composer-install build`
-
-## Run development server
-
-`make composer-install dev-server`
+`resumed render --theme jsonresume-theme-even`

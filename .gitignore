@@ -1,7 +1,3 @@
-content.txt
-content.html
-*.pdf
-.idea
-vendor
+resume.html
+node_modules
 .history
-output.html
