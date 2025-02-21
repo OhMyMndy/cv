@@ -2,3 +2,5 @@ resume.html
 node_modules
 .history
 *.pdf
+.idea
+/output
