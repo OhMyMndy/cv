@@ -42,8 +42,9 @@ jobs:
 
       - name: Upload CV as an artifact
         if: env.ACT != 'true'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
+          name: CV
           path: output/cv.pdf
 
 #      - name: Upload CV PDF to release
