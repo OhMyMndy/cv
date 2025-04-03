@@ -1,0 +1,59 @@
+name: Generate CV PDF
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+concurrency:
+  # github.workflow: name of the workflow
+  # github.event.pull_request.number || github.ref: pull request number or branch name if not a pull request
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+
+  # Cancel in-progress runs when a new workflow with the same group name is triggered
+  cancel-in-progress: true
+
+jobs:
+  generate-cv:
+    name: Generate CV as PDF
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository containing the CV source files
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Install necessary dependencies for PDF generation
+      - name: Set up dependencies
+        run: |
+          
+          sudo apt-get update
+          sudo apt-get install -y fonts-roboto \
+            texlive-xetex texlive texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra
+          curl -sLS https://get.arkade.dev | sudo sh
+          arkade get --path /usr/local/bin just
+
+      # Generate the CV PDF (assuming a Markdown to LaTeX to PDF pipeline using Pandoc)
+      - name: Generate PDF from CV source
+        run: |
+          just build
+
+      - name: Upload CV as an artifact
+        if: env.ACT != 'true'
+        uses: actions/upload-artifact@v3
+        with:
+          path: output/cv.pdf
+
+#      - name: Upload CV PDF to release
+#        if: startsWith(github.ref, 'refs/tags/') && env.ACT != 'true'
+##        if: env.ACT != 'true'
+#        uses: actions/upload-release-asset@v1
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        with:
+#          upload_url: ${{ github.event.release.upload_url }}
+#          asset_path: output/cv.pdf
+#          asset_name: cv.pdf
+#          asset_content_type: application/pdf
